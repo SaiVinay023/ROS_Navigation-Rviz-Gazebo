@@ -1,13 +1,17 @@
 # SOFAR_nav01
 
-Very preliminar package.
+The husky robot is able to reach the target
 
 ## Packages
-to execute the launch files it is necessary to have the "slam_gmapping" and the "robot_description" packages.
+to execute the launch files it is necessary to install some packages.
+```bash
+sudo apt-get install ros-noetic-openslam-gmapping
+sudo apt-get install ros-noetic-navigation
+sudo apt-get install ros-noetic-lms1xx
+```
 
 ## Notes
-I found a urdf of the husky robot used in the simulation (It is not launched in these files, though) here I used the model from the package robot_description. 
-I don't think it is mandatory to use the husky anyway.
-The model it is not opening right in Rviz, but I think that once the path planning part is lauched as well it will work.
-
-Roberta
+Some parameters have been changed in order for the costmap to be updated in time and be sufficently wide so the robot doesn't drive too close to the walls.
+Moreover, the parameter of the topic "scan" in the costmap_common_params.yaml file has been changed to "laser_scan".
+The map is decently build when the fixed frame in rviz is "map", so be sure to set that. Withi this setting you'll get an error on the laser object but it works anyways.
+The behaviour may be different for you epending on the setup that you are using. I'm using Unity on native windows and ROS on a Ubunty VM, so it is not particularly reactive. The quality might improve with a two computers setup.
