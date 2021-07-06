@@ -22,8 +22,10 @@ TrajectoryPlannerROS:
 
 # Trajectory Scoring Parameters
   meter_scoring: true
-  pdist_scale: 5.0
-  gdist_scale: 0.0
+  #pdist_scale: 5.0	pdist_scale is deprecated. Please use the name path_distance_bias instead.
+  path_distance_bias: 5.0
+  #gdist_scale: 0.0	gdist_scale is deprecated. Please use the name goal_distance_bias instead.
+  goal_distance_bias: 0.0
   occdist_scale: 5.0
   heading_lookahead: 5.0
   dwa: false

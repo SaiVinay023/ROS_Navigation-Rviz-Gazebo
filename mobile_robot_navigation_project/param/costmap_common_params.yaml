@@ -1,7 +1,7 @@
 max_obstacle_height: 0.60  
 obstacle_range: 3.0
 raytrace_range: 3.0
-robot_radius: 0.15
+robot_radius: 0.15 #used to be 0.2
 
 # voxel map configuration; z-voxels 0 are filled by bumpers and 1 by laser scan (kinect)
 map_type: voxel
@@ -10,7 +10,7 @@ z_resolution: 0.2
 z_voxels: 2
 publish_voxel_map: false
 
-observation_sources: scan
+observation_sources: laser_scan
 
-scan: {data_type: LaserScan, topic: scan, marking: true, clearing: true, min_obstacle_height: 0.05, max_obstacle_height: 0.6}
-
+scan: {data_type: LaserScan, topic: /laser_scan, marking: true, clearing: true, min_obstacle_height: 0.05, max_obstacle_height: 0.6}
+# changed scan to laser_scan

@@ -1,10 +1,10 @@
 global_costmap:
    global_frame: map
-   robot_base_frame: link_chassis
-   update_frequency: 1.0
-   publish_frequency: 0.5
+   robot_base_frame: base_link
+   update_frequency: 3.0 #used to be 3.0
+   publish_frequency: 2.0 #used to be 2
    static_map: true
    transform_tolerance: 1.0
    inflation_layer:
-        inflation_radius: 1.0
+        inflation_radius: 2.0 #used to be 1.0
         cost_scaling_factor: 20

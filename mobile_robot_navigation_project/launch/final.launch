@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+	<include file="$(find mobile_robot_navigation_project)/launch/move_base.launch" /> 
+	<include file="$(find mobile_robot_navigation_project)/launch/rviz.launch" /> 
+	<include file="$(find mobile_robot_navigation_project)/launch/simulation_gmapping.launch" /> 
+	<!--remap from="/scan" to="/laser_scan"/-->
+
+</launch>

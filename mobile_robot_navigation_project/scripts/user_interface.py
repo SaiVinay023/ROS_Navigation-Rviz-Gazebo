@@ -40,7 +40,7 @@ def main():
 	
 	
 	if(r==1):
-		resp = srv_client_wall_follower(False)
+
 		print("Please choose one target that is below")
 		print("1: (-4,-3), 2: (-4,2), 3: (-4,7), 4: (5,-7), 5: (5,-3), 6: (5,1)")
 		goaltarget=int(raw_input('target: '))
@@ -63,7 +63,7 @@ def main():
 		
 	if(r==2):
 		
-		resp=srv_client_wall_follower(False)
+		
 		twist_msg= Twist()
 		twist_msg.linear.x=0
 		twist_msg.angular.z=0
