@@ -8,6 +8,7 @@ Panels:
         - /Status1
         - /Map2
         - /LaserScan1
+        - /LaserScan1/Status1
       Splitter Ratio: 0.5
     Tree Height: 647
   - Class: rviz/Selection
@@ -235,7 +236,7 @@ Visualization Manager:
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: base_link
+    Fixed Frame: map
     Frame Rate: 30
   Name: root
   Tools:
@@ -254,7 +255,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 18.39322853088379
+      Distance: 25.01479148864746
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -262,9 +263,9 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0
-        Y: 0
-        Z: 0
+        X: -1.925882339477539
+        Y: 5.69210958480835
+        Z: -4.901494979858398
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
