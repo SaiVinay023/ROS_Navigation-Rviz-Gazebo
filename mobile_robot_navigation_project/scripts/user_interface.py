@@ -9,7 +9,7 @@ from time import sleep
 from std_srvs.srv import *
 
 target_position=[[-4,-3], [-4,2], [-4,7], [5,-7], [5,-3], [5,1]] #six possible target
-target_flag=0 # flag to indicate when move_base reach target
+target_flag=0 # flag to indicate when move_base reach target 
 
 
 
